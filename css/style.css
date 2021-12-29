@@ -1,0 +1,173 @@
+
+/*обнуление*/
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+ul,
+ol,
+li {
+	list-style: none;
+}
+img {
+	vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+html,
+body {
+	height: 100%;
+	line-height: 1;
+	background: rgb(75, 75, 75);
+	font-size: 14px;
+	color: #fff;
+	font-weight: 500;
+	font-family: Oswald;
+}
+
+
+
+.wraper {
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	overflow: hidden;
+}
+
+.header {
+	position: fixed;
+		top: 0;
+		left: 0;
+		min-height: 80px;
+		width: 100%;
+		z-index: 10;
+		max-height:70px ;
+		display: flex;
+		align-items: center;
+		background: #000;
+}
+.header__body {
+width: 100%;
+}
+.header__menu {
+
+}
+.items__menu {
+	display: flex;
+	justify-content: space-around;
+}
+.menu__item {
+}
+.menu__link {
+	color: #fff;
+	font-size: 20px;
+}
+.popup-link {
+
+}
+.page {
+}
+.main__page {
+	padding: 100px 40px;
+}
+.contant__section {
+	margin: 0 auto;
+}
+.page__contant {
+	
+}
+.contant__body {
+	text-align: center;
+}
+.contant__title {
+	font-size: 40px;
+	color: #fff;
+	font-weight: bold;
+}
+.contant__text {
+	color: #fff;
+	font-size: 25px;
+}
+.contant__image {
+	display: block;
+	max-width: 400px;
+}
+.contant__image img{
+width: 100%;
+
+}
+.submain__page {
+	padding: 20px 60px;
+}
+.contant__subtitle {
+	text-align: center;
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+}
+/*popup styles--------------------------------------*/
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.8);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+}
+.popup:target{
+opacity: 1;
+visibility: visible;
+
+}
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px 30px 10px;
+
+}
+.popup__content {
+	background: #fff;
+	color: black;
+	max-width: 830px;
+	padding: 30px;
+	position: relative;
+}
+.popup__close {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	font-size: 20px;
+	text-decoration: none;
+	color: #000;
+}
+.popup__title {
+	font-size: 40px;
+	margin: 0px 0px 1em 0px;
+}
+.popup__area{
+position: absolute;
+width: 100%;
+height: 100%;
+top: 0;
+left: 0;
+
+}
+/*https://youtu.be/qoO1ZNi1LyI*/
